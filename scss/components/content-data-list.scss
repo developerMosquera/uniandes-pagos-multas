@@ -1,0 +1,80 @@
+.pagos-multas {
+  &--content-data-list {
+
+    margin-bottom: 20px;
+
+    &--title-content {
+      padding-left: none !important;
+      padding: 0px !important;
+    }
+
+    h3 {
+      color: $colorPrimary;
+      font-weight: 400;
+      margin-bottom: 30px;
+      text-decoration: underline;
+      text-decoration-color: $colorActive;
+    }
+
+    &--table-list {
+      padding: 0px !important;
+      thead {
+        border-top: 2px $colorActive solid;
+        background-color: $colorDefault;
+
+        tr {
+          th {
+            border-bottom: 2px $colorActive solid !important;
+            padding: 15px 0px 15px 0px !important;
+            color: $colorActive;
+            text-align: center;
+          }
+        }
+      }
+
+      tbody {
+
+        tr {
+          td {
+            color: $colorPrimary;
+            text-align: center;
+            border-top: none !important;
+            border-bottom: 1px $colorDefault solid !important;
+          }
+        }
+      }
+    }
+
+    &--pay-select {
+
+      &--content-icon-text {
+
+        border: 1px $colorActive solid;
+        float: right;
+        cursor: pointer;
+        border-radius: 5px;
+
+        div {
+          display: inline-block;
+          padding: 5px;
+        }
+
+        &--icon {
+          margin-right: -5px;
+          font-size: 1.8em;
+          background-color: $colorActive;
+          color: $colorSecondary;
+          vertical-align: top;
+        }
+
+        &--text {
+          font-size: 0.9em;
+          color: $colorActive;
+          font-weight: 500;
+          width: 100px;
+          text-align: center;
+        }
+      }
+    }
+  }
+}

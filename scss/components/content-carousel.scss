@@ -1,0 +1,25 @@
+.pagos-multas {
+
+  &--content-carousel {
+    padding: 15px 0px 0px 0px;
+    background-color: $colorSecondary;
+    border-bottom: 1px $colorDefault solid;
+    height: 50px;
+    color: $colorPrimary;
+    margin-bottom: 30px;
+
+    &--item-carousel {
+      text-align: center;
+      padding-bottom: 15px;
+      cursor: pointer;
+    }
+
+    &--item-carousel-active {
+      text-align: center;
+      border-bottom: 2px $colorActive solid;
+      padding-bottom: 15px;
+      cursor: pointer;
+    }
+  }
+
+}

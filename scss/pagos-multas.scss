@@ -1,0 +1,12 @@
+/** Importación de los sass para solo compilar este archivo */
+
+@import "components/base";
+@import "components/content-perfil";
+@import "components/content-carousel";
+@import "components/content-nav-items";
+@import "components/content-data-list";
+@import "components/content-pagination";
+
+.content-display-none {
+  display: none;
+}

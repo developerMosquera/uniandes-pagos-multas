@@ -1,0 +1,26 @@
+.pagos-multas {
+  &--content-pagination {
+    margin-top: 50px;
+    text-align: center;
+
+    &--item-pagination {
+
+      a {
+        color: $colorPrimary !important;
+        font-weight: bold !important;
+        border: 1px $colorPrimary solid !important;
+        margin: 0px 2px 0px 2px !important;
+      }
+    }
+
+    &--item-pagination-active {
+      a {
+        background-color: $colorActive !important;
+        color: $colorSecondary !important;
+        font-weight: bold !important;
+        border: 1px $colorActive solid !important;
+        margin: 0px 2px 0px 2px !important;
+      }
+    }
+  }
+}

@@ -1,0 +1,167 @@
+@charset "UTF-8";
+/** Importación de los sass para solo compilar este archivo */
+/** Variables */
+/**************/
+/**
+* Font
+**/
+/**
+* Colors
+**/
+/**
+* Sizes
+**/
+.pagos-multas {
+  font-size: 14px; }
+  .pagos-multas--content-perfil {
+    background-color: #F2F2F2;
+    padding: 10px 40px 10px 40px; }
+    .pagos-multas--content-perfil--title-content {
+      padding-left: none !important;
+      padding: 0px !important; }
+    .pagos-multas--content-perfil h3 {
+      color: #767676;
+      font-weight: 400;
+      margin-bottom: 15px; }
+    .pagos-multas--content-perfil--config-img {
+      text-align: center; }
+      .pagos-multas--content-perfil--config-img img {
+        width: 160px;
+        height: 160px; }
+      .pagos-multas--content-perfil--config-img--upload-img {
+        padding: 10px 0px 5px 0px;
+        cursor: pointer;
+        color: #767676;
+        font-weight: 400; }
+        .pagos-multas--content-perfil--config-img--upload-img span {
+          font-size: 1.5em;
+          font-weight: bold;
+          color: #03B5AA; }
+    .pagos-multas--content-perfil--info-perfil {
+      padding: 10px 0px 0px 10px; }
+      .pagos-multas--content-perfil--info-perfil--info-name {
+        font-size: 1.9em;
+        text-decoration: underline;
+        text-decoration-color: #03B5AA;
+        text-decoration-style: solid;
+        color: #767676;
+        margin-bottom: 30px; }
+      .pagos-multas--content-perfil--info-perfil--info-email {
+        font-size: 1.2em;
+        font-weight: bold;
+        color: #767676;
+        margin-bottom: 30px; }
+        .pagos-multas--content-perfil--info-perfil--info-email span {
+          color: #03B5AA;
+          font-size: 1.3em;
+          padding-right: 10px; }
+      .pagos-multas--content-perfil--info-perfil--info-rol {
+        font-size: 1.2em;
+        font-weight: bold;
+        color: #767676; }
+        .pagos-multas--content-perfil--info-perfil--info-rol span {
+          color: #03B5AA;
+          font-size: 1.3em;
+          padding-right: 10px; }
+
+.pagos-multas--content-carousel {
+  padding: 15px 0px 0px 0px;
+  background-color: #FFFFFF;
+  border-bottom: 1px #F2F2F2 solid;
+  height: 50px;
+  color: #767676;
+  margin-bottom: 30px; }
+  .pagos-multas--content-carousel--item-carousel {
+    text-align: center;
+    padding-bottom: 15px;
+    cursor: pointer; }
+  .pagos-multas--content-carousel--item-carousel-active {
+    text-align: center;
+    border-bottom: 2px #03B5AA solid;
+    padding-bottom: 15px;
+    cursor: pointer; }
+
+.pagos-multas--content-nav {
+  margin-bottom: 20px; }
+  .pagos-multas--content-nav--content-nav-items {
+    border-bottom: 2px #03B5AA solid; }
+    .pagos-multas--content-nav--content-nav-items--nav-item a {
+      cursor: pointer !important;
+      padding: 10px 25px 10px 25px !important;
+      border-right: 1px solid #03B5AA !important;
+      border-left: 1px solid #03B5AA !important;
+      border-top: 1px solid #03B5AA !important;
+      color: #03B5AA !important; }
+    .pagos-multas--content-nav--content-nav-items--nav-item-active a {
+      cursor: pointer !important;
+      padding: 10px 25px 10px 25px !important;
+      border-right: 1px solid #03B5AA !important;
+      border-left: 1px solid #03B5AA !important;
+      border-top: 1px solid #03B5AA !important;
+      background-color: #03B5AA !important;
+      color: #FFFFFF !important; }
+
+.pagos-multas--content-data-list {
+  margin-bottom: 20px; }
+  .pagos-multas--content-data-list--title-content {
+    padding-left: none !important;
+    padding: 0px !important; }
+  .pagos-multas--content-data-list h3 {
+    color: #767676;
+    font-weight: 400;
+    margin-bottom: 30px;
+    text-decoration: underline;
+    text-decoration-color: #03B5AA; }
+  .pagos-multas--content-data-list--table-list {
+    padding: 0px !important; }
+    .pagos-multas--content-data-list--table-list thead {
+      border-top: 2px #03B5AA solid;
+      background-color: #F2F2F2; }
+      .pagos-multas--content-data-list--table-list thead tr th {
+        border-bottom: 2px #03B5AA solid !important;
+        padding: 15px 0px 15px 0px !important;
+        color: #03B5AA;
+        text-align: center; }
+    .pagos-multas--content-data-list--table-list tbody tr td {
+      color: #767676;
+      text-align: center;
+      border-top: none !important;
+      border-bottom: 1px #F2F2F2 solid !important; }
+  .pagos-multas--content-data-list--pay-select--content-icon-text {
+    border: 1px #03B5AA solid;
+    float: right;
+    cursor: pointer;
+    border-radius: 5px; }
+    .pagos-multas--content-data-list--pay-select--content-icon-text div {
+      display: inline-block;
+      padding: 5px; }
+    .pagos-multas--content-data-list--pay-select--content-icon-text--icon {
+      margin-right: -5px;
+      font-size: 1.8em;
+      background-color: #03B5AA;
+      color: #FFFFFF;
+      vertical-align: top; }
+    .pagos-multas--content-data-list--pay-select--content-icon-text--text {
+      font-size: 0.9em;
+      color: #03B5AA;
+      font-weight: 500;
+      width: 100px;
+      text-align: center; }
+
+.pagos-multas--content-pagination {
+  margin-top: 50px;
+  text-align: center; }
+  .pagos-multas--content-pagination--item-pagination a {
+    color: #767676 !important;
+    font-weight: bold !important;
+    border: 1px #767676 solid !important;
+    margin: 0px 2px 0px 2px !important; }
+  .pagos-multas--content-pagination--item-pagination-active a {
+    background-color: #03B5AA !important;
+    color: #FFFFFF !important;
+    font-weight: bold !important;
+    border: 1px #03B5AA solid !important;
+    margin: 0px 2px 0px 2px !important; }
+
+.content-display-none {
+  display: none; }

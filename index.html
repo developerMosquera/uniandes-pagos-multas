@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="libs/css/nice-select.css" />
+  <link rel="stylesheet" href="libs/css/swiper.min.css" />
+  <link rel="stylesheet" href="var.css" />
+  <link rel="stylesheet" href="css/pagos-multas.css" />
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="libs/js/swiper.min.js"></script>
+  <script src="libs/js/jquery.nice-select.min.js"></script>
+
+</head>
+<body>
+
+  <br /><br />
+
+  <aside id="pagos-multas" class="container-fluid pagos-multas">
+
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 pagos-multas--content-perfil">
+
+        <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1 pagos-multas--content-perfil--title-content">
+          <h3>Perfil</h3>
+        </div>
+
+        <div class="col-xs-2 col-sm-2 col-md-3 col-lg-3 pagos-multas--content-perfil--config-img">
+
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <img alt="140x140" class="img-circle" src="./img/perfil.jpg" />
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 pagos-multas--content-perfil--config-img--upload-img">
+            <span class="glyphicon glyphicon-picture" aria-hidden="true"></span> Subir foto
+          </div>
+        </div>
+
+        <div class="col-xs-8 col-sm-8 col-md-7 col-lg-7 pagos-multas--content-perfil--info-perfil">
+
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 pagos-multas--content-perfil--info-perfil--info-name">
+            Mauricio Acevedo Rueda
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 pagos-multas--content-perfil--info-perfil--info-email">
+            <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> m.acevedir@uniandes.edu.co
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 pagos-multas--content-perfil--info-perfil--info-rol">
+            <span class="glyphicon glyphicon-user" aria-hidden="true"></span> Seleccione el rol:
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="row">
+
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 pagos-multas--content-carousel">
+        <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1">
+
+          <div class="swiper-container">
+            <div class="swiper-wrapper carousel">
+              <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 swiper-slide pagos-multas--content-carousel--item-carousel-js pagos-multas--content-carousel--item-carousel-active" data-class="estado-cuenta">Estado de cuenta</div>
+              <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 swiper-slide pagos-multas--content-carousel--item-carousel-js pagos-multas--content-carousel--item-carousel" data-class="pago-servicio">Pago de servicios y multas</div>
+              <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 swiper-slide pagos-multas--content-carousel--item-carousel-js pagos-multas--content-carousel--item-carousel">Renovación de préstamos</div>
+              <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 swiper-slide pagos-multas--content-carousel--item-carousel-js pagos-multas--content-carousel--item-carousel">Historial de préstamos</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row pagos-multas-content-show-item estado-cuenta">
+
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 pagos-multas--content-nav">
+        <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1 pagos-multas--content-nav--content-nav-items">
+          <ul class="nav nav-tabs">
+            <li class="active pagos-multas--content-nav--content-nav-items--nav-item-js pagos-multas--content-nav--content-nav-items--nav-item-active" data-class="estado-cuenta-pendiente"><a href="#">Pendiente</a></li>
+            <li class="active pagos-multas--content-nav--content-nav-items--nav-item-js pagos-multas--content-nav--content-nav-items--nav-item" data-class="estado-cuenta-procesado"><a href="#">Procesados</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row pagos-multas-content-show-item pagos-multas-content-show-nav estado-cuenta estado-cuenta-pendiente">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 pagos-multas--content-data-list">
+        <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1 pagos-multas--content-data-list--title-content">
+          <h3>Multas</h3>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1 table-responsive pagos-multas--content-data-list--table-list">
+          <table class="table">
+            <thead>
+              <tr>
+                <th></th>
+                <th>ID Usuario</th>
+                <th>Concepto</th>
+                <th>Fecha</th>
+                <th>Valor</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><input type="checkbox" /></td>
+                <td>201554613</td>
+                <td>Prestamo tiempo en uso centro computo</td>
+                <td>10:54<br />06-03-2020</td>
+                <td>$350.000</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" /></td>
+                <td>201554613</td>
+                <td>Prestamo tiempo en uso centro computo</td>
+                <td>10:54<br />06-03-2020</td>
+                <td>$350.000</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" /></td>
+                <td>201554613</td>
+                <td>Prestamo tiempo en uso centro computo</td>
+                <td>10:54<br />06-03-2020</td>
+                <td>$350.000</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1 pagos-multas--content-data-list--pay-select">
+          <div class="pagos-multas--content-data-list--pay-select--content-icon-text">
+            <div class="pagos-multas--content-data-list--pay-select--content-icon-text--icon">
+              <span class="glyphicon glyphicon-piggy-bank" aria-hidden="true"></span>
+            </div>
+            <div class="pagos-multas--content-data-list--pay-select--content-icon-text--text">
+              Pagar multas seleccionadas
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row pagos-multas-content-show-item pagos-multas-content-show-nav content-display-none estado-cuenta estado-cuenta-procesado">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 pagos-multas--content-data-list">
+        <div
+          class="col-xs-12 col-sm-12 col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1 pagos-multas--content-data-list--title-content">
+          <h3>Procesados</h3>
+        </div>
+        <div
+          class="col-xs-12 col-sm-12 col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1 table-responsive pagos-multas--content-data-list--table-list">
+          <table class="table">
+            <thead>
+              <tr>
+                <th></th>
+                <th>ID Usuario</th>
+                <th>Concepto</th>
+                <th>Fecha</th>
+                <th>Valor</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><input type="checkbox" /></td>
+                <td>201554613</td>
+                <td>Prestamo tiempo en uso centro computo</td>
+                <td>10:54<br />06-03-2020</td>
+                <td>$350.000</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" /></td>
+                <td>201554613</td>
+                <td>Prestamo tiempo en uso centro computo</td>
+                <td>10:54<br />06-03-2020</td>
+                <td>$350.000</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" /></td>
+                <td>201554613</td>
+                <td>Prestamo tiempo en uso centro computo</td>
+                <td>10:54<br />06-03-2020</td>
+                <td>$350.000</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div
+          class="col-xs-12 col-sm-12 col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1 pagos-multas--content-data-list--pay-select">
+          <div class="pagos-multas--content-data-list--pay-select--content-icon-text">
+            <div class="pagos-multas--content-data-list--pay-select--content-icon-text--icon">
+              <span class="glyphicon glyphicon-piggy-bank" aria-hidden="true"></span>
+            </div>
+            <div class="pagos-multas--content-data-list--pay-select--content-icon-text--text">
+              Pagar multas seleccionadas
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row pagos-multas-content-show-item pagos-multas-content-show-nav estado-cuenta estado-cuenta-pendiente">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 pagos-multas--content-data-list">
+        <div
+          class="col-xs-12 col-sm-12 col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1 pagos-multas--content-data-list--title-content">
+          <h3>Servicios</h3>
+        </div>
+        <div
+          class="col-xs-12 col-sm-12 col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1 table-responsive pagos-multas--content-data-list--table-list">
+          <table class="table">
+            <thead>
+              <tr>
+                <th></th>
+                <th>ID Usuario</th>
+                <th>Concepto</th>
+                <th>Fecha</th>
+                <th>Valor</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><input type="checkbox" /></td>
+                <td>201554613</td>
+                <td>Prestamo tiempo en uso centro computo</td>
+                <td>10:54<br />06-03-2020</td>
+                <td>$350.000</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" /></td>
+                <td>201554613</td>
+                <td>Prestamo tiempo en uso centro computo</td>
+                <td>10:54<br />06-03-2020</td>
+                <td>$350.000</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" /></td>
+                <td>201554613</td>
+                <td>Prestamo tiempo en uso centro computo</td>
+                <td>10:54<br />06-03-2020</td>
+                <td>$350.000</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div
+          class="col-xs-12 col-sm-12 col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1 pagos-multas--content-data-list--pay-select">
+          <div class="pagos-multas--content-data-list--pay-select--content-icon-text">
+            <div class="pagos-multas--content-data-list--pay-select--content-icon-text--icon">
+              <span class="glyphicon glyphicon-piggy-bank" aria-hidden="true"></span>
+            </div>
+            <div class="pagos-multas--content-data-list--pay-select--content-icon-text--text">
+              Pagar multas seleccionadas
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row pagos-multas-content-show-item pagos-multas-content-show-nav estado-cuenta estado-cuenta-pendiente">
+
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 pagos-multas--content-pagination">
+        <nav aria-label="...">
+          <ul class="pagination">
+            <li class="disabled pagos-multas--content-pagination--item-pagination"><a href="#" aria-label="Previous">Anterior</a></li>
+            <li class="pagos-multas--content-pagination--item-pagination"><a href="#">1</a></li>
+            <li class="pagos-multas--content-pagination--item-pagination-active"><a href="#">2</a></li>
+            <li class="pagos-multas--content-pagination--item-pagination"><a href="#">3</a></li>
+            <li class="pagos-multas--content-pagination--item-pagination"><a href="#">4</a></li>
+            <li class="pagos-multas--content-pagination--item-pagination"><a href="#">5</a></li>
+            <li class="pagos-multas--content-pagination--item-pagination"><a href="#" aria-label="Next">Siguiente</a></li>
+          </ul>
+        </nav>
+      </div>
+
+    </div>
+
+    <div class="row pagos-multas-content-show-item pagos-multas-content-show-nav content-display-none estado-cuenta estado-cuenta-procesado">
+
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 pagos-multas--content-pagination">
+        <nav aria-label="...">
+          <ul class="pagination">
+            <li class="disabled pagos-multas--content-pagination--item-pagination"><a href="#"
+                aria-label="Previous">Anterior</a></li>
+            <li class="pagos-multas--content-pagination--item-pagination"><a href="#">1</a></li>
+            <li class="pagos-multas--content-pagination--item-pagination-active"><a href="#">2</a></li>
+            <li class="pagos-multas--content-pagination--item-pagination"><a href="#">3</a></li>
+            <li class="pagos-multas--content-pagination--item-pagination"><a href="#" aria-label="Next">Siguiente</a></li>
+          </ul>
+        </nav>
+      </div>
+
+    </div>
+
+    <div class="row pagos-multas-content-show-item content-display-none pago-servicio">
+
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 pagos-multas--content-nav">
+        <div
+          class="col-xs-12 col-sm-12 col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1 pagos-multas--content-nav--content-nav-items">
+          <ul class="nav nav-tabs">
+            <li class="active pagos-multas--content-nav--content-nav-items--nav-item-js pagos-multas--content-nav--content-nav-items--nav-item-active"><a href="#">Nav primero</a></li>
+            <li class="active pagos-multas--content-nav--content-nav-items--nav-item-js pagos-multas--content-nav--content-nav-items--nav-item"><a href="#">Nav segundo</a></li>
+            <li class="active pagos-multas--content-nav--content-nav-items--nav-item-js pagos-multas--content-nav--content-nav-items--nav-item"><a href="#">Nav tercero</a></li>
+            <li class="active pagos-multas--content-nav--content-nav-items--nav-item-js pagos-multas--content-nav--content-nav-items--nav-item"><a href="#">Nav cuarto</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row pagos-multas-content-show-item pagos-multas-content-show-nav content-display-none pago-servicio">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 pagos-multas--content-data-list">
+        <div
+          class="col-xs-12 col-sm-12 col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1 pagos-multas--content-data-list--title-content">
+          <h3>Multas</h3>
+        </div>
+        <div
+          class="col-xs-12 col-sm-12 col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1 table-responsive pagos-multas--content-data-list--table-list">
+          <table class="table">
+            <thead>
+              <tr>
+                <th></th>
+                <th>ID Usuario</th>
+                <th>Concepto</th>
+                <th>Fecha</th>
+                <th>Valor</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><input type="checkbox" /></td>
+                <td>201554613</td>
+                <td>Prestamo tiempo en uso centro computo</td>
+                <td>10:54<br />06-03-2020</td>
+                <td>$350.000</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" /></td>
+                <td>201554613</td>
+                <td>Prestamo tiempo en uso centro computo</td>
+                <td>10:54<br />06-03-2020</td>
+                <td>$350.000</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" /></td>
+                <td>201554613</td>
+                <td>Prestamo tiempo en uso centro computo</td>
+                <td>10:54<br />06-03-2020</td>
+                <td>$350.000</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div
+          class="col-xs-12 col-sm-12 col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1 pagos-multas--content-data-list--pay-select">
+          <div class="pagos-multas--content-data-list--pay-select--content-icon-text">
+            <div class="pagos-multas--content-data-list--pay-select--content-icon-text--icon">
+              <span class="glyphicon glyphicon-piggy-bank" aria-hidden="true"></span>
+            </div>
+            <div class="pagos-multas--content-data-list--pay-select--content-icon-text--text">
+              Pagar multas seleccionadas
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row pagos-multas-content-show-item pagos-multas-content-show-nav content-display-none pago-servicio">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 pagos-multas--content-data-list">
+        <div
+          class="col-xs-12 col-sm-12 col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1 pagos-multas--content-data-list--title-content">
+          <h3>Servicios</h3>
+        </div>
+        <div
+          class="col-xs-12 col-sm-12 col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1 table-responsive pagos-multas--content-data-list--table-list">
+          <table class="table">
+            <thead>
+              <tr>
+                <th></th>
+                <th>ID Usuario</th>
+                <th>Concepto</th>
+                <th>Fecha</th>
+                <th>Valor</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><input type="checkbox" /></td>
+                <td>201554613</td>
+                <td>Prestamo tiempo en uso centro computo</td>
+                <td>10:54<br />06-03-2020</td>
+                <td>$350.000</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" /></td>
+                <td>201554613</td>
+                <td>Prestamo tiempo en uso centro computo</td>
+                <td>10:54<br />06-03-2020</td>
+                <td>$350.000</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" /></td>
+                <td>201554613</td>
+                <td>Prestamo tiempo en uso centro computo</td>
+                <td>10:54<br />06-03-2020</td>
+                <td>$350.000</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div
+          class="col-xs-12 col-sm-12 col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1 pagos-multas--content-data-list--pay-select">
+          <div class="pagos-multas--content-data-list--pay-select--content-icon-text">
+            <div class="pagos-multas--content-data-list--pay-select--content-icon-text--icon">
+              <span class="glyphicon glyphicon-piggy-bank" aria-hidden="true"></span>
+            </div>
+            <div class="pagos-multas--content-data-list--pay-select--content-icon-text--text">
+              Pagar multas seleccionadas
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row pagos-multas-content-show-item pagos-multas-content-show-nav content-display-none pago-servicio">
+
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 pagos-multas--content-pagination">
+        <nav aria-label="...">
+          <ul class="pagination">
+            <li class="disabled pagos-multas--content-pagination--item-pagination"><a href="#"
+                aria-label="Previous">Anterior</a></li>
+            <li class="pagos-multas--content-pagination--item-pagination"><a href="#">1</a></li>
+            <li class="pagos-multas--content-pagination--item-pagination-active"><a href="#">2</a></li>
+            <li class="pagos-multas--content-pagination--item-pagination"><a href="#">3</a></li>
+            <li class="pagos-multas--content-pagination--item-pagination"><a href="#">4</a></li>
+            <li class="pagos-multas--content-pagination--item-pagination"><a href="#">5</a></li>
+            <li class="pagos-multas--content-pagination--item-pagination"><a href="#" aria-label="Next">Siguiente</a></li>
+          </ul>
+        </nav>
+      </div>
+
+    </div>
+
+  </aside>
+
+
+  <br />
+  <br />
+  <br />
+
+  <script src="js/pagos-multas.js"></script>
+</body>
+</html>
